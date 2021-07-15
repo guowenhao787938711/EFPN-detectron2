@@ -7,15 +7,13 @@ run training scripts such as frcnn_x101_efpn.py as included here, change configs
 
 #### Modifications from detectron2:
 
-1. "detectron2" folder name changed to "detectron" to correctly build (could also work outside of root dir)
+1. "detectron2" folder name changed to "detectron" to correctly build 
 
 2. in detectron/modeling/backbone, we modified resnet.py and fpn.py to create the EFPN and FTT module
 
 3. slight modifications to fix import paths, cuda compatibility...etc, including in detectron/engine/defaults.py, detectron/layers/wrappers.py
 
 
-#### Todo:
-1. create loss function for supervised and independent training of EFPN+FTT 
 
 
 #### Credits:
